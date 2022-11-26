@@ -1,0 +1,5 @@
+package kg.geektech.game.players;
+
+public enum SuperAbility {
+    HEAL, BOOST, CRITICAL_DAMAGE, SAVE_DAMAGE_AND_REVERT, TOR_STOPPED_THE_BOSS, GOLEM_PROTECTED_THE_COMPANIONS
+}

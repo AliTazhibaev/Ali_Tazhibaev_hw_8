@@ -1,0 +1,29 @@
+package kg.geektech.game.players;
+
+import kg.geektech.game.general.RPG_Game;
+
+public class Thor extends Hero {
+    public Thor(int health, int damage, String name) {
+        super(health, damage,SuperAbility.TOR_STOPPED_THE_BOSS, name );
+
+    }
+
+
+    @Override
+    public void applySuperPower(Hero[] heroes, Boss boss) {
+        boolean thorHamer= RPG_Game.random.nextBoolean();
+        if (thorHamer){
+            boss.setDamage(0);
+            System.out.println("Boss oglushon");
+        }else{
+            boss.setDamage(50);
+        }
+    }
+
+    @Override
+    public void applySuperPower(Boss boss, Hero[] heroes) {
+
+    }
+}
+
+
